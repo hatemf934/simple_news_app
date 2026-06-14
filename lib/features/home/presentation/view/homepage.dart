@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:news_apps/core/utils/route_manager.dart';
 import 'package:news_apps/cubits/theme_cubit/theme-cubit.dart';
-import 'package:news_apps/widgets/card_list_veiw.dart';
-import 'package:news_apps/widgets/custom_search.dart';
-import 'package:news_apps/widgets/news_list_veiw_builder.dart';
+import 'package:news_apps/features/home/presentation/view/widgets/card_list_veiw.dart';
+import 'package:news_apps/features/home/presentation/view/widgets/custom_search.dart';
+import 'package:news_apps/features/home/presentation/view/widgets/news_list_veiw_builder.dart';
 
 class Homepage extends StatelessWidget {
   const Homepage({super.key});

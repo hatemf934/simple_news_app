@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:news_apps/core/utils/route_manager.dart';
 import 'package:news_apps/models/card_model.dart';
 import 'package:news_apps/models/news_model.dart';
-import 'package:news_apps/views/cardview.dart';
-import 'package:news_apps/views/homepage.dart';
-import 'package:news_apps/views/webview.dart';
+import 'package:news_apps/features/cards/presentation/view/cardview.dart';
+import 'package:news_apps/features/home/presentation/view/homepage.dart';
+import 'package:news_apps/features/webcard/presentation/view/webview.dart';
 
 Route<dynamic> onGenerateRoute(RouteSettings routeSettings) {
   switch (routeSettings.name) {

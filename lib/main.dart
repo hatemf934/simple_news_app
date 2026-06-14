@@ -4,7 +4,7 @@ import 'package:news_apps/core/helper/on_generate.dart';
 import 'package:news_apps/cubits/theme_cubit/theme-cubit.dart';
 import 'package:news_apps/cubits/theme_cubit/theme_cubit_state.dart';
 import 'package:news_apps/models/modetheme.dart';
-import 'package:news_apps/views/homepage.dart';
+import 'package:news_apps/features/home/presentation/view/homepage.dart';
 
 void main() {
   runApp(

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:news_apps/widgets/news_list_veiw_builder.dart';
+import 'package:news_apps/features/home/presentation/view/widgets/news_list_veiw_builder.dart';
 
 class CustomSearch extends SearchDelegate {
   @override

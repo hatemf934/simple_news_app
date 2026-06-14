@@ -2,8 +2,8 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:news_apps/models/news_model.dart';
 import 'package:news_apps/services/generalnews.dart';
-import 'package:news_apps/widgets/loading_circular.dart';
-import 'package:news_apps/widgets/news_list_veiw.dart';
+import 'package:news_apps/core/widgets/loading_circular.dart';
+import 'package:news_apps/features/home/presentation/view/widgets/news_list_veiw.dart';
 
 // class NewsListVeiwBuilder extends StatefulWidget {
 //   const NewsListVeiwBuilder({super.key});

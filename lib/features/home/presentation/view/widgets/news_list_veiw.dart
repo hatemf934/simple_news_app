@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:news_apps/models/news_model.dart';
-
-import 'package:news_apps/widgets/News_tile.dart';
+import 'package:news_apps/features/home/presentation/view/widgets/News_tile.dart';
 
 // ignore: must_be_immutable
 class NewsListVeiw extends StatelessWidget {

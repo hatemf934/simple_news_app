@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:news_apps/models/card_model.dart';
-import 'package:news_apps/views/cardview.dart';
+import 'package:news_apps/features/cards/presentation/view/cardview.dart';
 
 class CardItems extends StatelessWidget {
   const CardItems({super.key, required this.card});

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:news_apps/models/card_model.dart';
-import 'package:news_apps/widgets/card_items.dart';
+import 'package:news_apps/features/home/presentation/view/widgets/card_items.dart';
 
 class CardListVeiw extends StatelessWidget {
   const CardListVeiw({super.key});

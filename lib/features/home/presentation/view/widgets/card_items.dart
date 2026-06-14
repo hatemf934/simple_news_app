@@ -5,7 +5,7 @@ import 'package:news_apps/core/utils/padding_manager.dart';
 import 'package:news_apps/core/utils/raduis_manager.dart';
 import 'package:news_apps/core/utils/styles.dart';
 import 'package:news_apps/core/utils/width_manager.dart';
-import 'package:news_apps/models/card_model.dart';
+import 'package:news_apps/core/models/card_model.dart';
 import 'package:news_apps/features/cards/presentation/view/cardview.dart';
 
 class CardItems extends StatelessWidget {

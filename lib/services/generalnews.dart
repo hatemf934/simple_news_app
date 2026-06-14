@@ -1,7 +1,7 @@
 import 'dart:developer';
 
 import 'package:dio/dio.dart';
-import 'package:news_apps/models/news_model.dart';
+import 'package:news_apps/features/home/data/models/news_model.dart';
 
 class Newsservices {
   final Dio dio;

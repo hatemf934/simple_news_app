@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:news_apps/core/utils/padding_manager.dart';
 import 'package:news_apps/core/utils/styles.dart';
 import 'package:news_apps/core/widgets/custom_cached_image.dart';
-import 'package:news_apps/models/news_model.dart';
+import 'package:news_apps/features/home/data/models/news_model.dart';
 
 class OnePageNews extends StatelessWidget {
   const OnePageNews({super.key, required this.news});

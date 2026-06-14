@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:news_apps/core/utils/color_manager.dart';
 import 'package:news_apps/core/utils/styles.dart';
 import 'package:news_apps/core/utils/text_manager.dart';
-import 'package:news_apps/cubits/theme_cubit/theme-cubit.dart';
+import 'package:news_apps/core/cubits/theme_cubit/theme-cubit.dart';
 import 'package:news_apps/features/home/presentation/view/widgets/custom_search.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {

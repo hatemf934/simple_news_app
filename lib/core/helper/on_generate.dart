@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:news_apps/core/utils/route_manager.dart';
-import 'package:news_apps/models/card_model.dart';
-import 'package:news_apps/models/news_model.dart';
+import 'package:news_apps/core/models/card_model.dart';
+import 'package:news_apps/features/home/data/models/news_model.dart';
 import 'package:news_apps/features/cards/presentation/view/cardview.dart';
 import 'package:news_apps/features/home/presentation/view/homepage.dart';
 import 'package:news_apps/features/webcard/presentation/view/webview.dart';

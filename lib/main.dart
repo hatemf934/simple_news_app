@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:news_apps/core/helper/on_generate.dart';
 import 'package:news_apps/cubits/theme_cubit/theme-cubit.dart';
 import 'package:news_apps/cubits/theme_cubit/theme_cubit_state.dart';
 import 'package:news_apps/models/modetheme.dart';
@@ -27,6 +28,8 @@ class NewsApp extends StatelessWidget {
                 : Modetheme().darkMode,
             debugShowCheckedModeBanner: false,
             home: const Homepage(),
+            onGenerateRoute: onGenerateRoute,
+            initialRoute: Homepage.id,
           );
         },
       ),

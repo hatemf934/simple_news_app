@@ -9,12 +9,11 @@ class CardItems extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.push(context,
-            MaterialPageRoute(builder: (BuildContext context) {
-          return Cardview(
-            catogery: card.nameImage,
-          );
-        }));
+        Navigator.pushNamed(
+          context,
+          Cardview.id,
+          arguments: card,
+        );
       },
       child: Container(
         height: 100,

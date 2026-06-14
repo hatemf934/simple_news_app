@@ -9,9 +9,7 @@ class NewsTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.push(context, MaterialPageRoute(builder: (context) {
-          return Webview(news: news);
-        }));
+        Navigator.pushNamed(context, Webview.id, arguments: news);
       },
       child: Padding(
         padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 16),

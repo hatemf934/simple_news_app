@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news_apps/core/utils/text_manager.dart';
 import 'package:news_apps/features/home/presentation/view/widgets/news_list_veiw_builder.dart';
 
 class CustomSearch extends SearchDelegate {
@@ -34,6 +35,6 @@ class CustomSearch extends SearchDelegate {
 
   @override
   Widget buildSuggestions(BuildContext context) {
-    return const Center(child: Text("Search Any News"));
+    return const Center(child: Text(TextManager.searchanyNews));
   }
 }

@@ -1,10 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:news_apps/core/utils/assets_manager.dart';
+import 'package:news_apps/core/utils/height_manager.dart';
+import 'package:news_apps/core/utils/padding_manager.dart';
+import 'package:news_apps/core/utils/raduis_manager.dart';
+import 'package:news_apps/core/utils/styles.dart';
+import 'package:news_apps/features/home/presentation/view/widgets/custom_text_news_tile.dart';
 import 'package:news_apps/models/news_model.dart';
 import 'package:news_apps/features/webcard/presentation/view/webview.dart';
 
 class NewsTile extends StatelessWidget {
   const NewsTile({super.key, required this.news});
   final NewsModel news;
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -12,42 +19,29 @@ class NewsTile extends StatelessWidget {
         Navigator.pushNamed(context, Webview.id, arguments: news);
       },
       child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 16),
-        child: Column(children: [
-          ClipRRect(
-            borderRadius: BorderRadius.circular(8),
-            child: Image.network(
-              news.imageNews != null
-                  ? news.imageNews!
-                  : "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=",
-              height: 200,
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 8),
-            child: Text(
-              news.title,
-              style: const TextStyle(
-                fontSize: 19,
-                fontWeight: FontWeight.bold,
+        padding: const EdgeInsets.symmetric(
+          vertical: PaddingManager.p16,
+          horizontal: PaddingManager.p16,
+        ),
+        child: Column(
+          children: [
+            ClipRRect(
+              borderRadius: BorderRadius.circular(RadiusManager.r8),
+              child: Image.network(
+                news.imageNews ?? AssetsManager.noImageUrl,
+                height: HeightManager.h200,
               ),
-              maxLines: 2,
-              overflow: TextOverflow.ellipsis,
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 8),
-            child: Text(
-              news.descreption,
-              style: const TextStyle(
-                fontSize: 15,
-                fontWeight: FontWeight.bold,
-              ),
-              maxLines: 2,
-              overflow: TextOverflow.ellipsis,
+            CustomTextNewsTile(
+              textTile: news.title,
+              styleTile: Styles.textStyle19,
             ),
-          ),
-        ]),
+            CustomTextNewsTile(
+              textTile: news.descreption,
+              styleTile: Styles.textStyle15,
+            )
+          ],
+        ),
       ),
     );
   }

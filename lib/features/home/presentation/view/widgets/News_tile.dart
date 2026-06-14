@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:news_apps/core/utils/assets_manager.dart';
-import 'package:news_apps/core/utils/height_manager.dart';
 import 'package:news_apps/core/utils/padding_manager.dart';
-import 'package:news_apps/core/utils/raduis_manager.dart';
 import 'package:news_apps/core/utils/styles.dart';
+import 'package:news_apps/core/widgets/custom_cached_image.dart';
 import 'package:news_apps/features/home/presentation/view/widgets/custom_text_news_tile.dart';
 import 'package:news_apps/models/news_model.dart';
 import 'package:news_apps/features/webcard/presentation/view/webview.dart';
@@ -25,13 +23,7 @@ class NewsTile extends StatelessWidget {
         ),
         child: Column(
           children: [
-            ClipRRect(
-              borderRadius: BorderRadius.circular(RadiusManager.r8),
-              child: Image.network(
-                news.imageNews ?? AssetsManager.noImageUrl,
-                height: HeightManager.h200,
-              ),
-            ),
+            CustomCachedImage(imageUrl: news.imageNews),
             CustomTextNewsTile(
               textTile: news.title,
               styleTile: Styles.textStyle19,

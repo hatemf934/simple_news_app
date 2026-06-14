@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:news_apps/core/utils/padding_manager.dart';
+import 'package:news_apps/core/utils/styles.dart';
+import 'package:news_apps/core/widgets/custom_cached_image.dart';
 import 'package:news_apps/models/news_model.dart';
 
 class OnePageNews extends StatelessWidget {
@@ -10,61 +13,41 @@ class OnePageNews extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(PaddingManager.p16),
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 20),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(8),
-                child: Image.network(
-                  news.imageNews != null
-                      ? news.imageNews!
-                      : "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ=",
-                  height: 200,
-                ),
-              ),
-            ),
+                padding:
+                    const EdgeInsets.symmetric(vertical: PaddingManager.p20),
+                child: CustomCachedImage(imageUrl: news.imageNews)),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 8),
+              padding: const EdgeInsets.symmetric(vertical: PaddingManager.p8),
               child: Text(
                 news.title,
-                style: const TextStyle(
-                  fontSize: 19,
-                  fontWeight: FontWeight.bold,
-                ),
+                style: Styles.textStyle19,
                 maxLines: 2,
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 8),
+              padding: const EdgeInsets.symmetric(vertical: PaddingManager.p8),
               child: Text(
                 news.descreption,
-                style: const TextStyle(
-                  fontSize: 19,
-                  fontWeight: FontWeight.bold,
-                ),
+                style: Styles.textStyle19,
                 maxLines: 4,
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 8),
+              padding: const EdgeInsets.symmetric(vertical: PaddingManager.p8),
               child: Text(
                 news.publishedAt,
-                style: const TextStyle(
-                  fontSize: 19,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: Styles.textStyle19,
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 8),
+              padding: const EdgeInsets.symmetric(vertical: PaddingManager.p8),
               child: Text(
                 news.content,
-                style: const TextStyle(
-                  fontSize: 19,
-                  fontWeight: FontWeight.bold,
-                ),
+                style: Styles.textStyle19,
               ),
             ),
           ],

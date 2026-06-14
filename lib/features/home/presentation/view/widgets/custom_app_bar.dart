@@ -12,7 +12,6 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      centerTitle: true,
       title: RichText(
         text: TextSpan(
           children: [

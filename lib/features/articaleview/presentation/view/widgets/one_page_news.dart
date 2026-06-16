@@ -18,7 +18,9 @@ class OnePageNews extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const CustomAppBarArticaleView(),
+      appBar: CustomAppBarArticaleView(
+        news: news,
+      ),
       body: Padding(
         padding: const EdgeInsets.all(PaddingManager.p16),
         child: SingleChildScrollView(

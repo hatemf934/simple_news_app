@@ -7,6 +7,7 @@ class NewsModel {
   final DateTime publishedAt;
   final String content;
   final SourceModel sourceModel;
+  final String url;
 
   const NewsModel({
     required this.publishedAt,
@@ -15,10 +16,12 @@ class NewsModel {
     required this.imageNews,
     required this.descreption,
     required this.sourceModel,
+    required this.url,
   });
 
   factory NewsModel.fromjson(Map<String, dynamic> json) {
     return NewsModel(
+      url: json["url"],
       sourceModel: SourceModel.fromJson(json["source"]),
       imageNews: json["urlToImage"],
       descreption: json["description"],

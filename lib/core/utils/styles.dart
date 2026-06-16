@@ -14,15 +14,15 @@ class Styles {
     fontWeight: FontWeight.bold,
   );
   static const TextStyle textStyle22 = TextStyle(
-    fontSize: 22,
+    fontSize: FontManager.font24,
     fontWeight: FontWeight.bold,
   );
   static const TextStyle textStyle19 = TextStyle(
-    fontSize: 19,
+    fontSize: FontManager.font19,
     fontWeight: FontWeight.bold,
   );
   static const TextStyle textStyle18 = TextStyle(
-    fontSize: 18,
+    fontSize: FontManager.font18,
     color: ColorManager.greyColor,
     fontWeight: FontWeight.w400,
   );

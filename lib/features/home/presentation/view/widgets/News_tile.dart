@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news_apps/core/utils/height_manager.dart';
 import 'package:news_apps/core/utils/padding_manager.dart';
 import 'package:news_apps/core/utils/styles.dart';
 import 'package:news_apps/core/widgets/custom_cached_image.dart';
@@ -28,14 +29,11 @@ class NewsTile extends StatelessWidget {
         child: Column(
           children: [
             CustomCachedImage(imageUrl: news.imageNews),
+            const SizedBox(height: HeightManager.h10),
             CustomTextNewsTile(
               textTile: news.title,
               styleTile: Styles.textStyle19,
             ),
-            CustomTextNewsTile(
-              textTile: news.descreption,
-              styleTile: Styles.textStyle15,
-            )
           ],
         ),
       ),

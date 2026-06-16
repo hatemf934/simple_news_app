@@ -13,7 +13,7 @@ class CustomTextNewsTile extends StatelessWidget {
       child: Text(
         textTile,
         style: styleTile,
-        maxLines: 2,
+        maxLines: 3,
         overflow: TextOverflow.ellipsis,
       ),
     );

@@ -13,4 +13,5 @@ class ColorManager {
   static const Color softRed = Color(0xFFE24B4A);
   static Color shimmerBase = Colors.grey.shade300;
   static Color shimmerHighlight = Colors.grey.shade100;
+  static const Color appBarColor = Color(0xFF2e2e2e);
 }

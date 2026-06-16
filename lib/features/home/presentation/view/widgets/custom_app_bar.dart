@@ -4,6 +4,7 @@ import 'package:news_apps/core/utils/color_manager.dart';
 import 'package:news_apps/core/utils/styles.dart';
 import 'package:news_apps/core/utils/text_manager.dart';
 import 'package:news_apps/core/cubits/theme_cubit/theme-cubit.dart';
+import 'package:news_apps/core/widgets/custom_flexible_space.dart';
 import 'package:news_apps/features/home/presentation/view/widgets/custom_search.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
@@ -12,6 +13,9 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      elevation: 0,
+      scrolledUnderElevation: 0,
+      flexibleSpace: const CustomFlexibleSpace(),
       title: RichText(
         text: TextSpan(
           children: [

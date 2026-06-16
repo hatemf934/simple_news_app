@@ -20,7 +20,7 @@ class CustomButtonBrowser extends StatelessWidget {
         padding: const EdgeInsets.symmetric(
             horizontal: PaddingManager.p14, vertical: PaddingManager.p12),
         decoration: BoxDecoration(
-          color: ColorManager.offBlack,
+          color: ColorManager.appBarColor,
           borderRadius: BorderRadius.circular(RadiusManager.r8),
           border: Border.all(color: ColorManager.offBlack, width: 0.5),
         ),

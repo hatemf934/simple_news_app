@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news_apps/core/utils/color_manager.dart';
 
 class LoadingCircular extends StatelessWidget {
   const LoadingCircular({super.key});
@@ -11,8 +12,11 @@ class LoadingCircular extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          CircularProgressIndicator(
-            strokeWidth: 3,
+          Center(
+            child: CircularProgressIndicator(
+              strokeWidth: 3,
+              color: ColorManager.greyColor,
+            ),
           ),
         ],
       ),

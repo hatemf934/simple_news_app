@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 import 'package:news_apps/core/utils/color_manager.dart';
 import 'package:news_apps/core/utils/raduis_manager.dart';
 import 'package:news_apps/core/utils/styles.dart';
 import 'package:news_apps/core/utils/text_manager.dart';
+import 'package:news_apps/features/home/data/models/news_model.dart';
 
 class ArticleMetaRow extends StatelessWidget {
   const ArticleMetaRow({
     super.key,
+    required this.news,
   });
-
+  final NewsModel news;
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -27,13 +30,10 @@ class ArticleMetaRow extends StatelessWidget {
             child: Text("sports".toUpperCase(), style: Styles.textStyleBold15),
           ),
         ),
-
         const SizedBox(width: 8),
         _dot(),
         const SizedBox(width: 8),
-
-        // Date
-        Text("June 16 3",
+        Text(DateFormat('MMMM d, yyyy').format(news.publishedAt),
             style: Styles.textStyle15.copyWith(
               color: ColorManager.mediumGrey,
             )),

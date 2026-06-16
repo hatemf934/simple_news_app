@@ -5,10 +5,11 @@ import 'package:news_apps/core/utils/padding_manager.dart';
 import 'package:news_apps/core/utils/raduis_manager.dart';
 import 'package:news_apps/core/utils/styles.dart';
 import 'package:news_apps/core/utils/width_manager.dart';
+import 'package:news_apps/features/home/data/models/news_model.dart';
 
 class CustomButtonBrowser extends StatelessWidget {
-  const CustomButtonBrowser({super.key});
-
+  const CustomButtonBrowser({super.key, required this.news});
+  final NewsModel news;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -34,7 +35,7 @@ class CustomButtonBrowser extends StatelessWidget {
                       style: Styles.textStyle18.copyWith(
                           color: ColorManager.lightGrey,
                           fontWeight: FontWeight.bold)),
-                  Text("wired.com",
+                  Text(news.sourceModel.name,
                       style: Styles.textStyle15
                           .copyWith(color: ColorManager.darkGreyModifier)),
                 ],

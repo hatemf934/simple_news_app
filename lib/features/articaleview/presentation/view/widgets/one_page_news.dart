@@ -26,7 +26,7 @@ class OnePageNews extends StatelessWidget {
             children: [
               CustomCachedImage(imageUrl: news.imageNews),
               const SizedBox(height: HeightManager.h30),
-              const ArticleMetaRow(),
+              ArticleMetaRow(news: news),
               Padding(
                 padding:
                     const EdgeInsets.symmetric(vertical: PaddingManager.p16),
@@ -37,7 +37,7 @@ class OnePageNews extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: HeightManager.h10),
-              const ArticleSourceRow(),
+              ArticleSourceRow(news: news),
               const Padding(
                 padding: EdgeInsets.symmetric(vertical: PaddingManager.p16),
                 child: Divider(
@@ -58,7 +58,7 @@ class OnePageNews extends StatelessWidget {
                     style: Styles.textStyle18),
               ),
               const SizedBox(height: HeightManager.h10),
-              const CustomButtonBrowser()
+              CustomButtonBrowser(news: news)
             ],
           ),
         ),

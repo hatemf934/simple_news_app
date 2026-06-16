@@ -3,12 +3,14 @@ import 'package:news_apps/core/utils/color_manager.dart';
 import 'package:news_apps/core/utils/height_manager.dart';
 import 'package:news_apps/core/utils/styles.dart';
 import 'package:news_apps/core/utils/width_manager.dart';
+import 'package:news_apps/features/home/data/models/news_model.dart';
 
 class ArticleSourceRow extends StatelessWidget {
   const ArticleSourceRow({
     super.key,
+    required this.news,
   });
-
+  final NewsModel news;
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -22,7 +24,7 @@ class ArticleSourceRow extends StatelessWidget {
           ),
           alignment: Alignment.center,
           child: Text(
-            "w".toUpperCase(),
+            news.sourceModel.name[0].toUpperCase(),
             style: Styles.textStyle19.copyWith(color: ColorManager.softRed),
           ),
         ),
@@ -30,7 +32,7 @@ class ArticleSourceRow extends StatelessWidget {
         const SizedBox(width: 8),
 
         // Source name
-        Text("Weerer",
+        Text(news.sourceModel.name,
             style: Styles.textStyleBold15
                 .copyWith(color: ColorManager.mediumGrey)),
       ],

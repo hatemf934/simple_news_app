@@ -4,7 +4,7 @@ import 'package:news_apps/core/models/card_model.dart';
 import 'package:news_apps/features/home/data/models/news_model.dart';
 import 'package:news_apps/features/cards/presentation/view/cardview.dart';
 import 'package:news_apps/features/home/presentation/view/homepage.dart';
-import 'package:news_apps/features/webcard/presentation/view/webview.dart';
+import 'package:news_apps/features/articaleview/presentation/view/articale_view.dart';
 
 Route<dynamic> onGenerateRoute(RouteSettings routeSettings) {
   switch (routeSettings.name) {
@@ -16,7 +16,7 @@ Route<dynamic> onGenerateRoute(RouteSettings routeSettings) {
           builder: (context) => Cardview(catogery: card.nameImage));
     case RouteManager.webview:
       final news = routeSettings.arguments as NewsModel;
-      return MaterialPageRoute(builder: (context) => Webview(news: news));
+      return MaterialPageRoute(builder: (context) => ArticaleView(news: news));
 
     default:
       return MaterialPageRoute(builder: (context) => const Scaffold());

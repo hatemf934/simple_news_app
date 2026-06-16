@@ -4,7 +4,7 @@ import 'package:news_apps/core/utils/styles.dart';
 import 'package:news_apps/core/widgets/custom_cached_image.dart';
 import 'package:news_apps/features/home/presentation/view/widgets/custom_text_news_tile.dart';
 import 'package:news_apps/features/home/data/models/news_model.dart';
-import 'package:news_apps/features/webcard/presentation/view/webview.dart';
+import 'package:news_apps/features/articaleview/presentation/view/articale_view.dart';
 
 class NewsTile extends StatelessWidget {
   const NewsTile({super.key, required this.news});
@@ -14,7 +14,7 @@ class NewsTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.pushNamed(context, Webview.id, arguments: news);
+        Navigator.pushNamed(context, ArticaleView.id, arguments: news);
       },
       child: Padding(
         padding: const EdgeInsets.symmetric(

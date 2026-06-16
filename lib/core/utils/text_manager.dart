@@ -10,4 +10,5 @@ class TextManager {
   static const String sport = "Sport";
   static const String technology = "Technologys";
   static const String general = "Generals";
+  static const String dot = '•';
 }

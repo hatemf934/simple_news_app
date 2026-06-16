@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news_apps/core/utils/color_manager.dart';
 import 'package:news_apps/core/utils/font_manager.dart';
 
 class Styles {
@@ -12,8 +13,24 @@ class Styles {
     fontSize: FontManager.font15,
     fontWeight: FontWeight.bold,
   );
-  static const TextStyle textStyle19 = TextStyle(
-    fontSize: FontManager.font19,
+  static const TextStyle textStyle22 = TextStyle(
+    fontSize: 22,
     fontWeight: FontWeight.bold,
   );
+  static const TextStyle textStyle19 = TextStyle(
+    fontSize: 19,
+    fontWeight: FontWeight.bold,
+  );
+  static const TextStyle textStyle18 = TextStyle(
+    fontSize: 18,
+    color: ColorManager.greyColor,
+    fontWeight: FontWeight.w400,
+  );
+  static const TextStyle textStyleBold15 = TextStyle(
+    color: ColorManager.softRed,
+    fontSize: FontManager.font15,
+    fontWeight: FontWeight.bold,
+  );
+  static const TextStyle textStyle11 = TextStyle(
+      color: ColorManager.darkGreyModifier, fontSize: FontManager.font11);
 }

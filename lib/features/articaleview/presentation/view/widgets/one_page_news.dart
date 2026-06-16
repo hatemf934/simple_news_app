@@ -11,10 +11,10 @@ import 'package:news_apps/features/articaleview/presentation/view/widgets/custom
 import 'package:news_apps/features/home/data/models/news_model.dart';
 
 class OnePageNews extends StatelessWidget {
-  const OnePageNews({super.key, required this.news});
+  const OnePageNews({super.key, required this.news, required this.catogery});
 
   final NewsModel news;
-
+  final String catogery;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,7 +26,10 @@ class OnePageNews extends StatelessWidget {
             children: [
               CustomCachedImage(imageUrl: news.imageNews),
               const SizedBox(height: HeightManager.h30),
-              ArticleMetaRow(news: news),
+              ArticleMetaRow(
+                news: news,
+                catogery: catogery,
+              ),
               Padding(
                 padding:
                     const EdgeInsets.symmetric(vertical: PaddingManager.p16),

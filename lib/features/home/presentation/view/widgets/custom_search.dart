@@ -28,7 +28,7 @@ class CustomSearch extends SearchDelegate {
   Widget buildResults(BuildContext context) {
     return CustomScrollView(slivers: [
       NewsListVeiwBuilder(
-        catorgy: query,
+        catogery: query,
       ),
     ]);
   }

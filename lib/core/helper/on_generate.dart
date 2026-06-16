@@ -14,9 +14,15 @@ Route<dynamic> onGenerateRoute(RouteSettings routeSettings) {
       final card = routeSettings.arguments as CardModel;
       return MaterialPageRoute(
           builder: (context) => Cardview(catogery: card.nameImage));
-    case RouteManager.webview:
-      final news = routeSettings.arguments as NewsModel;
-      return MaterialPageRoute(builder: (context) => ArticaleView(news: news));
+    case RouteManager.article:
+      final args = routeSettings.arguments as Map<String, dynamic>;
+      final news = args['news'] as NewsModel;
+      final catogery = args['catogery'] as String;
+      return MaterialPageRoute(
+          builder: (context) => ArticaleView(
+                news: news,
+                catogery: catogery,
+              ));
 
     default:
       return MaterialPageRoute(builder: (context) => const Scaffold());

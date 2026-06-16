@@ -8,18 +8,21 @@ import 'package:news_apps/features/home/presentation/view/widgets/news_list_veiw
 import 'package:news_apps/core/widgets/loading_circular.dart';
 
 class NewsListVeiwBuilder extends StatelessWidget {
-  const NewsListVeiwBuilder({super.key, required this.catorgy});
-  final String catorgy;
+  const NewsListVeiwBuilder({super.key, required this.catogery});
+  final String catogery;
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (context) => GetnewsCubit(
           RepoNewsImplement(newsservices: NewsServices(apiClass: ApiClass())))
-        ..getAllNews(catorgy: catorgy),
+        ..getAllNews(catorgy: catogery),
       child: BlocBuilder<GetnewsCubit, GetnewsState>(
         builder: (context, state) {
           if (state is GetnewsSucsses) {
-            return NewsListVeiw(generalNewsList: state.newsmodel);
+            return NewsListVeiw(
+              generalNewsList: state.newsmodel,
+              catogery: catogery,
+            );
           } else if (state is GetnewsFailure) {
             return SliverToBoxAdapter(
               child: Center(

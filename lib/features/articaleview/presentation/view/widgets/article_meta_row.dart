@@ -10,8 +10,10 @@ class ArticleMetaRow extends StatelessWidget {
   const ArticleMetaRow({
     super.key,
     required this.news,
+    required this.catogery,
   });
   final NewsModel news;
+  final String catogery;
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -27,7 +29,7 @@ class ArticleMetaRow extends StatelessWidget {
             ),
           ),
           child: Center(
-            child: Text("sports".toUpperCase(), style: Styles.textStyleBold15),
+            child: Text(catogery.toUpperCase(), style: Styles.textStyleBold15),
           ),
         ),
         const SizedBox(width: 8),

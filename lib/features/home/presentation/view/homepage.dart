@@ -19,7 +19,7 @@ class Homepage extends StatelessWidget {
           SliverToBoxAdapter(child: SizedBox(height: HeightManager.h10)),
           SliverToBoxAdapter(child: CardListVeiw()),
           NewsListVeiwBuilder(
-            catorgy: 'generals',
+            catogery: 'generals',
           ),
         ],
       ),

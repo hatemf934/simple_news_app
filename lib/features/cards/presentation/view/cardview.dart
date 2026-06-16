@@ -12,7 +12,7 @@ class Cardview extends StatelessWidget {
       child: Scaffold(
         body: CustomScrollView(slivers: [
           NewsListVeiwBuilder(
-            catorgy: catogery,
+            catogery: catogery,
           ),
         ]),
       ),

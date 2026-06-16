@@ -4,16 +4,20 @@ import 'package:news_apps/features/home/presentation/view/widgets/News_tile.dart
 
 // ignore: must_be_immutable
 class NewsListVeiw extends StatelessWidget {
-  NewsListVeiw({super.key, required this.generalNewsList});
+  NewsListVeiw(
+      {super.key, required this.generalNewsList, required this.catogery});
   List<NewsModel> generalNewsList;
-
+  final String catogery;
   @override
   Widget build(BuildContext context) {
     return SliverList(
         delegate: SliverChildBuilderDelegate(
       childCount: generalNewsList.length,
       (context, index) {
-        return NewsTile(news: generalNewsList[index]);
+        return NewsTile(
+          news: generalNewsList[index],
+          catogery: catogery,
+        );
       },
     ));
   }

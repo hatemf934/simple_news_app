@@ -7,14 +7,18 @@ import 'package:news_apps/features/home/data/models/news_model.dart';
 import 'package:news_apps/features/articaleview/presentation/view/articale_view.dart';
 
 class NewsTile extends StatelessWidget {
-  const NewsTile({super.key, required this.news});
+  const NewsTile({super.key, required this.news, required this.catogery});
   final NewsModel news;
-
+  final String catogery;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.pushNamed(context, ArticaleView.id, arguments: news);
+        Navigator.pushNamed(
+          context,
+          ArticaleView.id,
+          arguments: {'news': news, 'catogery': catogery},
+        );
       },
       child: Padding(
         padding: const EdgeInsets.symmetric(

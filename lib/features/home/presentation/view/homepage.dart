@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:news_apps/core/utils/color_manager.dart';
 import 'package:news_apps/core/utils/route_manager.dart';
 import 'package:news_apps/core/utils/height_manager.dart';
 import 'package:news_apps/features/home/presentation/view/widgets/card_list_veiw.dart';
@@ -13,7 +12,6 @@ class Homepage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      backgroundColor: ColorManager.offBlack,
       appBar: CustomAppBar(),
       body: CustomScrollView(
         physics: BouncingScrollPhysics(),

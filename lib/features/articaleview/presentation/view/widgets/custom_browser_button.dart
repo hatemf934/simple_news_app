@@ -20,14 +20,15 @@ class CustomButtonBrowser extends StatelessWidget {
         padding: const EdgeInsets.symmetric(
             horizontal: PaddingManager.p14, vertical: PaddingManager.p12),
         decoration: BoxDecoration(
-          color: ColorManager.appBarColor,
+          color: Theme.of(context).primaryColorDark,
           borderRadius: BorderRadius.circular(RadiusManager.r8),
-          border: Border.all(color: ColorManager.offBlack, width: 0.5),
+          border: Border.all(color: Theme.of(context).primaryColor, width: 0.5),
         ),
         child: Row(
           children: [
-            const Icon(Icons.language_rounded,
-                color: ColorManager.darkGreyModifier, size: FontManager.font24),
+            Icon(Icons.language_rounded,
+                color: Theme.of(context).primaryColorLight,
+                size: FontManager.font24),
             const SizedBox(width: WidthManager.w10),
             Expanded(
               child: Column(
@@ -38,13 +39,14 @@ class CustomButtonBrowser extends StatelessWidget {
                           color: ColorManager.lightGrey,
                           fontWeight: FontWeight.bold)),
                   Text(news.sourceModel.name,
-                      style: Styles.textStyle15
-                          .copyWith(color: ColorManager.darkGreyModifier)),
+                      style: Styles.textStyle15.copyWith(
+                          color: Theme.of(context).primaryColorLight)),
                 ],
               ),
             ),
-            const Icon(Icons.open_in_new_rounded,
-                color: ColorManager.darkGreyModifier, size: FontManager.font24),
+            Icon(Icons.open_in_new_rounded,
+                color: Theme.of(context).primaryColorLight,
+                size: FontManager.font24),
           ],
         ),
       ),

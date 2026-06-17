@@ -7,6 +7,7 @@ class Styles {
 
   static const TextStyle textStyle24 = TextStyle(
     fontSize: FontManager.font24,
+    fontWeight: FontWeight.bold,
   );
 
   static const TextStyle textStyle15 = TextStyle(

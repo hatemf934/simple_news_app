@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:news_apps/core/utils/color_manager.dart';
-import 'package:news_apps/core/utils/styles.dart';
-import 'package:news_apps/core/utils/text_manager.dart';
 import 'package:news_apps/core/cubits/theme_cubit/theme-cubit.dart';
 import 'package:news_apps/core/widgets/custom_flexible_space.dart';
+import 'package:news_apps/core/widgets/custom_text_title_app.dart';
 import 'package:news_apps/features/home/presentation/view/widgets/custom_search.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
@@ -16,22 +14,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       elevation: 0,
       scrolledUnderElevation: 0,
       flexibleSpace: const CustomFlexibleSpace(),
-      title: RichText(
-        text: TextSpan(
-          children: [
-            TextSpan(
-              text: TextManager.newsText,
-              style:
-                  Styles.textStyle24.copyWith(color: ColorManager.blackColor),
-            ),
-            TextSpan(
-              text: TextManager.cloudText,
-              style:
-                  Styles.textStyle24.copyWith(color: ColorManager.witheColor),
-            ),
-          ],
-        ),
-      ),
+      title: const CustomTextTitleApp(),
       actions: [
         IconButton(
           onPressed: () {

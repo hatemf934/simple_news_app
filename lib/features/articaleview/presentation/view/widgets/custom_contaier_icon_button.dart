@@ -13,7 +13,7 @@ class CustomContaierIconButton extends StatelessWidget {
         onPressed: onTap,
         icon: Icon(
           icon,
-          color: ColorManager.greyColor,
+          color: ColorManager.lightGrey,
           size: FontManager.font24,
         ));
   }

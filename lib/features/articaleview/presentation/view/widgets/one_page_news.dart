@@ -18,7 +18,6 @@ class OnePageNews extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: ColorManager.offBlack,
       appBar: CustomAppBarArticaleView(
         news: news,
       ),
@@ -64,7 +63,8 @@ class OnePageNews extends StatelessWidget {
                     style: Styles.textStyle18),
               ),
               const SizedBox(height: HeightManager.h10),
-              CustomButtonBrowser(news: news)
+              CustomButtonBrowser(news: news),
+              const SizedBox(height: HeightManager.h10),
             ],
           ),
         ),

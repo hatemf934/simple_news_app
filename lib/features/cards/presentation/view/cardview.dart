@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:news_apps/core/utils/color_manager.dart';
 import 'package:news_apps/core/utils/route_manager.dart';
 import 'package:news_apps/features/home/presentation/view/widgets/news_list_veiw_builder.dart';
 
@@ -11,7 +10,6 @@ class Cardview extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: ColorManager.offBlack,
         body: CustomScrollView(slivers: [
           NewsListVeiwBuilder(
             catogery: catogery,

@@ -9,6 +9,7 @@ import 'package:news_apps/features/articaleview/presentation/view/widgets/articl
 import 'package:news_apps/features/articaleview/presentation/view/widgets/article_source_row.dart';
 import 'package:news_apps/features/articaleview/presentation/view/widgets/custom_app_bar_articale_view.dart';
 import 'package:news_apps/features/articaleview/presentation/view/widgets/custom_browser_button.dart';
+import 'package:news_apps/features/articaleview/presentation/view/widgets/custom_text_by_author.dart';
 import 'package:news_apps/features/home/data/models/news_model.dart';
 
 class ArticaleView extends StatelessWidget {
@@ -26,6 +27,7 @@ class ArticaleView extends StatelessWidget {
         padding: const EdgeInsets.all(PaddingManager.p16),
         child: SingleChildScrollView(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               CustomCachedImage(imageUrl: news.imageNews),
               const SizedBox(height: HeightManager.h30),
@@ -33,6 +35,8 @@ class ArticaleView extends StatelessWidget {
                 news: news,
                 catogery: catogery,
               ),
+              const SizedBox(height: HeightManager.h10),
+              CustomTextByAutor(news: news),
               Padding(
                 padding:
                     const EdgeInsets.symmetric(vertical: PaddingManager.p16),
@@ -42,7 +46,6 @@ class ArticaleView extends StatelessWidget {
                   // maxLines: 2,
                 ),
               ),
-              const SizedBox(height: HeightManager.h10),
               ArticleSourceRow(news: news),
               const Padding(
                 padding: EdgeInsets.symmetric(vertical: PaddingManager.p16),

@@ -28,10 +28,7 @@ class ArticleSourceRow extends StatelessWidget {
             style: Styles.textStyle19.copyWith(color: ColorManager.softRed),
           ),
         ),
-
         const SizedBox(width: 8),
-
-        // Source name
         Text(news.sourceModel.name,
             style: Styles.textStyleBold15
                 .copyWith(color: ColorManager.mediumGrey)),

@@ -8,6 +8,7 @@ class NewsModel {
   final String content;
   final SourceModel sourceModel;
   final String url;
+  final String? author;
 
   const NewsModel({
     required this.publishedAt,
@@ -17,10 +18,12 @@ class NewsModel {
     required this.descreption,
     required this.sourceModel,
     required this.url,
+    required this.author,
   });
 
   factory NewsModel.fromjson(Map<String, dynamic> json) {
     return NewsModel(
+      author: json["author"],
       url: json["url"],
       sourceModel: SourceModel.fromJson(json["source"]),
       imageNews: json["urlToImage"],

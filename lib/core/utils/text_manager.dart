@@ -11,9 +11,12 @@ class TextManager {
   static const String technology = "Technologys";
   static const String general = "Generals";
   static const String openInBrowser = 'Open in Browser';
+  static const String noAuthor = 'No Author';
   static const String shareNotSupported =
       'Share is not supported on this device';
   static const String shareError = 'Something went wrong, please try again';
   static const String browserError = 'Could not open the browser';
+  static const String byAuthor = ' By  ';
+
   static const String dot = '•';
 }

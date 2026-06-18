@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class ColorManager {
   ColorManager._();
   static const Color witheColor = Colors.white;
+  static const Color witheColor24 = Colors.white24;
   static const Color blackColor = Colors.black;
   static const Color offBlack = Color(0xFF1A1A1A);
   static const Color mediumGrey = Color(0xFF888888);

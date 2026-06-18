@@ -18,6 +18,8 @@ class TextManager {
   static const String browserError = 'Could not open the browser';
   static const String byAuthor = ' By  ';
   static const String tryAgain = "Try Again";
+  static const String searchForNews = "Search for news...";
+  static const String noResults = "No matching results found";
 
   static const String dot = '•';
 }

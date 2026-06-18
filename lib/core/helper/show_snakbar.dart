@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:news_apps/core/utils/color_manager.dart';
-import 'package:news_apps/core/utils/raduis_manager.dart';
-import 'package:news_apps/core/utils/styles.dart';
+import 'package:news_hub/core/utils/color_manager.dart';
+import 'package:news_hub/core/utils/raduis_manager.dart';
+import 'package:news_hub/core/utils/styles.dart';
 
 void showSnackBar(BuildContext context, String message) {
   if (!context.mounted) return;

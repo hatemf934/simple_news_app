@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:news_apps/constant.dart';
-import 'package:news_apps/core/utils/height_manager.dart';
-import 'package:news_apps/features/home/presentation/view/widgets/card_items.dart';
+import 'package:news_hub/constant.dart';
+import 'package:news_hub/core/utils/height_manager.dart';
+import 'package:news_hub/features/home/presentation/view/widgets/card_items.dart';
 
 class CardListVeiw extends StatelessWidget {
   const CardListVeiw({super.key});

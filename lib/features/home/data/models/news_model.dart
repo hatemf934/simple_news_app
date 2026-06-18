@@ -1,4 +1,4 @@
-import 'package:news_apps/features/home/data/models/source_model.dart';
+import 'package:news_hub/features/home/data/models/source_model.dart';
 
 class NewsModel {
   final String? imageNews;

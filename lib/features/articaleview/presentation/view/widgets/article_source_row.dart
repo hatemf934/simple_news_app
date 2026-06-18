@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:news_apps/core/utils/color_manager.dart';
-import 'package:news_apps/core/utils/height_manager.dart';
-import 'package:news_apps/core/utils/styles.dart';
-import 'package:news_apps/core/utils/width_manager.dart';
-import 'package:news_apps/features/home/data/models/news_model.dart';
+import 'package:news_hub/core/utils/color_manager.dart';
+import 'package:news_hub/core/utils/height_manager.dart';
+import 'package:news_hub/core/utils/styles.dart';
+import 'package:news_hub/core/utils/width_manager.dart';
+import 'package:news_hub/features/home/data/models/news_model.dart';
 
 class ArticleSourceRow extends StatelessWidget {
   const ArticleSourceRow({

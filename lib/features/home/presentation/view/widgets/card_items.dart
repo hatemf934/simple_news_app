@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:news_apps/core/utils/color_manager.dart';
-import 'package:news_apps/core/utils/height_manager.dart';
-import 'package:news_apps/core/utils/padding_manager.dart';
-import 'package:news_apps/core/utils/raduis_manager.dart';
-import 'package:news_apps/core/utils/styles.dart';
-import 'package:news_apps/core/utils/width_manager.dart';
-import 'package:news_apps/core/models/card_model.dart';
-import 'package:news_apps/features/cards/presentation/view/cardview.dart';
+import 'package:news_hub/core/models/card_model.dart';
+import 'package:news_hub/core/utils/color_manager.dart';
+import 'package:news_hub/core/utils/height_manager.dart';
+import 'package:news_hub/core/utils/padding_manager.dart';
+import 'package:news_hub/core/utils/raduis_manager.dart';
+import 'package:news_hub/core/utils/styles.dart';
+import 'package:news_hub/core/utils/width_manager.dart';
+import 'package:news_hub/features/cards/presentation/view/cardview.dart';
 
 class CardItems extends StatelessWidget {
   const CardItems({super.key, required this.card});

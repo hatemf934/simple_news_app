@@ -1,6 +1,6 @@
-import 'package:news_apps/core/utils/assets_manager.dart';
-import 'package:news_apps/core/utils/text_manager.dart';
-import 'package:news_apps/core/models/card_model.dart';
+import 'package:news_hub/core/models/card_model.dart';
+import 'package:news_hub/core/utils/assets_manager.dart';
+import 'package:news_hub/core/utils/text_manager.dart';
 
 final List<CardModel> card = [
   const CardModel(

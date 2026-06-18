@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:news_apps/core/utils/height_manager.dart';
-import 'package:news_apps/core/utils/padding_manager.dart';
-import 'package:news_apps/core/utils/styles.dart';
-import 'package:news_apps/core/widgets/custom_cached_image.dart';
-import 'package:news_apps/features/home/presentation/view/widgets/custom_text_news_tile.dart';
-import 'package:news_apps/features/home/data/models/news_model.dart';
-import 'package:news_apps/features/articaleview/presentation/view/articale_view.dart';
+import 'package:news_hub/core/utils/height_manager.dart';
+import 'package:news_hub/core/utils/padding_manager.dart';
+import 'package:news_hub/core/utils/styles.dart';
+import 'package:news_hub/core/widgets/custom_cached_image.dart';
+import 'package:news_hub/features/articaleview/presentation/view/articale_view.dart';
+import 'package:news_hub/features/home/data/models/news_model.dart';
+import 'package:news_hub/features/home/presentation/view/widgets/custom_text_news_tile.dart';
 
 class NewsTile extends StatelessWidget {
   const NewsTile({super.key, required this.news, required this.catogery});

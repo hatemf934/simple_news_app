@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:news_apps/core/utils/color_manager.dart';
-import 'package:news_apps/core/utils/font_manager.dart';
+import 'package:news_hub/core/utils/color_manager.dart';
+import 'package:news_hub/core/utils/font_manager.dart';
 
 class CustomContaierIconButton extends StatelessWidget {
   const CustomContaierIconButton(

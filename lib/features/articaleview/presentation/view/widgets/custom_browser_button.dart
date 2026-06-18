@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:news_apps/core/helper/open_in_browser.dart';
-import 'package:news_apps/core/utils/color_manager.dart';
-import 'package:news_apps/core/utils/font_manager.dart';
-import 'package:news_apps/core/utils/padding_manager.dart';
-import 'package:news_apps/core/utils/raduis_manager.dart';
-import 'package:news_apps/core/utils/styles.dart';
-import 'package:news_apps/core/utils/text_manager.dart';
-import 'package:news_apps/core/utils/width_manager.dart';
-import 'package:news_apps/features/home/data/models/news_model.dart';
+import 'package:news_hub/core/helper/open_in_browser.dart';
+import 'package:news_hub/core/utils/color_manager.dart';
+import 'package:news_hub/core/utils/font_manager.dart';
+import 'package:news_hub/core/utils/padding_manager.dart';
+import 'package:news_hub/core/utils/raduis_manager.dart';
+import 'package:news_hub/core/utils/styles.dart';
+import 'package:news_hub/core/utils/text_manager.dart';
+import 'package:news_hub/core/utils/width_manager.dart';
+import 'package:news_hub/features/home/data/models/news_model.dart';
 
 class CustomButtonBrowser extends StatelessWidget {
   const CustomButtonBrowser({super.key, required this.news});

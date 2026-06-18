@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:news_apps/core/helper/share_news.dart';
-import 'package:news_apps/core/widgets/custom_flexible_space.dart';
-import 'package:news_apps/core/widgets/custom_text_title_app.dart';
-import 'package:news_apps/features/articaleview/presentation/view/widgets/custom_contaier_icon_button.dart';
-import 'package:news_apps/features/home/data/models/news_model.dart';
+import 'package:news_hub/core/helper/share_news.dart';
+import 'package:news_hub/core/widgets/custom_flexible_space.dart';
+import 'package:news_hub/core/widgets/custom_text_title_app.dart';
+import 'package:news_hub/features/articaleview/presentation/view/widgets/custom_contaier_icon_button.dart';
+import 'package:news_hub/features/home/data/models/news_model.dart';
 
 class CustomAppBarArticaleView extends StatelessWidget
     implements PreferredSizeWidget {

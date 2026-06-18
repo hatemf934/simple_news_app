@@ -1,7 +1,7 @@
 import 'package:get_it/get_it.dart';
-import 'package:news_apps/core/services/api_class.dart';
-import 'package:news_apps/core/services/news_services.dart';
-import 'package:news_apps/features/home/data/repos/repo_news_implement.dart';
+import 'package:news_hub/core/services/api_class.dart';
+import 'package:news_hub/core/services/news_services.dart';
+import 'package:news_hub/features/home/data/repos/repo_news_implement.dart';
 
 final getIt = GetIt.instance;
 void setUp() {

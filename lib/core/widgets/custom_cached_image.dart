@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:news_apps/core/utils/color_manager.dart';
-import 'package:news_apps/core/utils/height_manager.dart';
-import 'package:news_apps/core/utils/raduis_manager.dart';
-import 'package:news_apps/core/widgets/error_cached_image.dart';
+import 'package:news_hub/core/utils/color_manager.dart';
+import 'package:news_hub/core/utils/height_manager.dart';
+import 'package:news_hub/core/utils/raduis_manager.dart';
+import 'package:news_hub/core/widgets/error_cached_image.dart';
 import 'package:shimmer/shimmer.dart';
 
 class CustomCachedImage extends StatelessWidget {

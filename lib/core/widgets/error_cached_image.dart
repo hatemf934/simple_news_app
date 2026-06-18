@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:news_apps/core/utils/color_manager.dart';
-import 'package:news_apps/core/utils/height_manager.dart';
+import 'package:news_hub/core/utils/color_manager.dart';
+import 'package:news_hub/core/utils/height_manager.dart';
 
 class ErrorCachedImage extends StatelessWidget {
   const ErrorCachedImage({super.key});

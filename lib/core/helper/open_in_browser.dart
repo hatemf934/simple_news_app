@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:news_apps/core/helper/show_snakbar.dart';
-import 'package:news_apps/core/utils/text_manager.dart';
+import 'package:news_hub/core/helper/show_snakbar.dart';
+import 'package:news_hub/core/utils/text_manager.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 Future<void> openInBrowser(String url, BuildContext context) async {

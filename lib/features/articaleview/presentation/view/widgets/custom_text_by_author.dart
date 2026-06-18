@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:news_apps/core/utils/color_manager.dart';
-import 'package:news_apps/core/utils/styles.dart';
-import 'package:news_apps/core/utils/text_manager.dart';
-import 'package:news_apps/features/home/data/models/news_model.dart';
+import 'package:news_hub/core/utils/color_manager.dart';
+import 'package:news_hub/core/utils/styles.dart';
+import 'package:news_hub/core/utils/text_manager.dart';
+import 'package:news_hub/features/home/data/models/news_model.dart';
 
 class CustomTextByAutor extends StatelessWidget {
   const CustomTextByAutor({super.key, required this.news});

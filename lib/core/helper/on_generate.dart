@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:news_apps/core/utils/route_manager.dart';
-import 'package:news_apps/core/models/card_model.dart';
-import 'package:news_apps/features/home/data/models/news_model.dart';
-import 'package:news_apps/features/cards/presentation/view/cardview.dart';
-import 'package:news_apps/features/home/presentation/view/homepage.dart';
-import 'package:news_apps/features/articaleview/presentation/view/articale_view.dart';
+import 'package:news_hub/core/models/card_model.dart';
+import 'package:news_hub/core/utils/route_manager.dart';
+import 'package:news_hub/features/articaleview/presentation/view/articale_view.dart';
+import 'package:news_hub/features/cards/presentation/view/cardview.dart';
+import 'package:news_hub/features/home/data/models/news_model.dart';
+import 'package:news_hub/features/home/presentation/view/homepage.dart';
 
 Route<dynamic> onGenerateRoute(RouteSettings routeSettings) {
   switch (routeSettings.name) {

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:news_apps/core/cubits/theme_cubit/theme-cubit.dart';
-import 'package:news_apps/core/widgets/custom_flexible_space.dart';
-import 'package:news_apps/core/widgets/custom_text_title_app.dart';
-import 'package:news_apps/features/search/presentation/views/custom_search.dart';
+import 'package:news_hub/core/cubits/theme_cubit/theme-cubit.dart';
+import 'package:news_hub/core/widgets/custom_flexible_space.dart';
+import 'package:news_hub/core/widgets/custom_text_title_app.dart';
+import 'package:news_hub/features/search/presentation/views/custom_search.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   const CustomAppBar({super.key});

@@ -1,4 +1,4 @@
-import 'package:news_apps/core/services/api_class.dart';
+import 'package:news_hub/core/services/api_class.dart';
 
 class NewsServices {
   final ApiClass apiClass;

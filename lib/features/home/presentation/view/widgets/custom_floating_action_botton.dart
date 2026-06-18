@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:news_apps/core/utils/color_manager.dart';
-import 'package:news_apps/core/utils/height_manager.dart';
-import 'package:news_apps/core/utils/width_manager.dart';
+import 'package:news_hub/core/utils/color_manager.dart';
+import 'package:news_hub/core/utils/height_manager.dart';
+import 'package:news_hub/core/utils/width_manager.dart';
 
 class CustomFloatingActionBotton extends StatelessWidget {
   const CustomFloatingActionBotton(

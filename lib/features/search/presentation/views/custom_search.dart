@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:news_apps/core/helper/server_locator.dart';
-import 'package:news_apps/core/utils/color_manager.dart';
-import 'package:news_apps/core/utils/text_manager.dart';
-import 'package:news_apps/core/widgets/custom_flexible_space.dart';
-import 'package:news_apps/features/home/data/repos/repo_news_implement.dart';
-import 'package:news_apps/features/home/presentation/bloc/getNews/getnews_cubit.dart';
-import 'package:news_apps/features/search/presentation/views/widgets/build_search_body.dart';
-import 'package:news_apps/features/search/presentation/views/widgets/custom_search_results.dart';
-import 'package:news_apps/features/search/presentation/views/widgets/theme_app_bar_search.dart';
+import 'package:news_hub/core/helper/server_locator.dart';
+import 'package:news_hub/core/utils/color_manager.dart';
+import 'package:news_hub/core/utils/text_manager.dart';
+import 'package:news_hub/core/widgets/custom_flexible_space.dart';
+import 'package:news_hub/features/home/data/repos/repo_news_implement.dart';
+import 'package:news_hub/features/home/presentation/bloc/getNews/getnews_cubit.dart';
+import 'package:news_hub/features/search/presentation/views/widgets/build_search_body.dart';
+import 'package:news_hub/features/search/presentation/views/widgets/custom_search_results.dart';
+import 'package:news_hub/features/search/presentation/views/widgets/theme_app_bar_search.dart';
 
 class CustomSearch extends SearchDelegate {
   CustomSearch()

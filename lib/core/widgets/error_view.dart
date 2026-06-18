@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:news_apps/core/error/failure.dart';
-import 'package:news_apps/core/utils/color_manager.dart';
-import 'package:news_apps/core/utils/font_manager.dart';
-import 'package:news_apps/core/utils/height_manager.dart';
-import 'package:news_apps/core/utils/padding_manager.dart';
-import 'package:news_apps/core/utils/text_manager.dart';
+import 'package:news_hub/core/error/failure.dart';
+import 'package:news_hub/core/utils/color_manager.dart';
+import 'package:news_hub/core/utils/font_manager.dart';
+import 'package:news_hub/core/utils/height_manager.dart';
+import 'package:news_hub/core/utils/padding_manager.dart';
+import 'package:news_hub/core/utils/text_manager.dart';
 
 class ErrorView extends StatelessWidget {
   final Failure failure;

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:news_apps/core/utils/padding_manager.dart';
+import 'package:news_hub/core/utils/padding_manager.dart';
 
 class CustomTextNewsTile extends StatelessWidget {
   const CustomTextNewsTile(

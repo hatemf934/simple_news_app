@@ -14,7 +14,7 @@ class LoadingCircular extends StatelessWidget {
           Center(
             child: CircularProgressIndicator(
               strokeWidth: 3,
-              color: Theme.of(context).indicatorColor,
+              color: Theme.of(context).colorScheme.secondary,
             ),
           ),
         ],

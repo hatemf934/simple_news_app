@@ -10,7 +10,9 @@ class Modetheme {
       primaryColor: ColorManager.offBlack,
       primaryColorDark: ColorManager.surfaceColor,
       primaryColorLight: ColorManager.darkGreyModifier,
-      indicatorColor: ColorManager.greyColor,
+      colorScheme: const ColorScheme.dark().copyWith(
+        secondary: ColorManager.mediumGrey,
+      ),
       textTheme: const TextTheme(
           titleSmall: TextStyle(
         color: ColorManager.mediumGrey,
@@ -21,11 +23,13 @@ class Modetheme {
   final ligthMode = ThemeData(
     useMaterial3: false,
     brightness: Brightness.light,
-    scaffoldBackgroundColor: const Color(0xffFFFAF3),
-    primaryColor: const Color(0xff618764),
-    primaryColorDark: const Color(0xff9CB080),
+    scaffoldBackgroundColor: ColorManager.scaffoldColorThemeOne,
+    primaryColor: ColorManager.primaryColorThemeOne,
+    primaryColorDark: ColorManager.dustyGreen,
     primaryColorLight: ColorManager.offBlack,
-    indicatorColor: const Color(0xff618764),
+    colorScheme: const ColorScheme.light().copyWith(
+      secondary: ColorManager.primaryColorThemeOne,
+    ),
     textTheme: const TextTheme(
         titleSmall: TextStyle(
       color: ColorManager.blackColor,

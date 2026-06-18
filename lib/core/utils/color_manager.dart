@@ -13,4 +13,8 @@ class ColorManager {
   static Color shimmerBase = Colors.grey.shade300;
   static Color shimmerHighlight = Colors.grey.shade100;
   static const Color surfaceColor = Color(0xFF2E2E2E);
+  static const Color primaryColorThemeOne = Color(0xff618764);
+  static const Color scaffoldColorThemeOne = Color(0xffFFFAF3);
+  static const Color dustyGreen = Color(0xff9CB080);
+  static const Color transparentColor = Colors.transparent;
 }

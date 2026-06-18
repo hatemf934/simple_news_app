@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:news_apps/core/services/api_class.dart';
-import 'package:news_apps/core/services/news_services.dart';
+import 'package:news_apps/core/helper/server_locator.dart';
 import 'package:news_apps/features/home/data/repos/repo_news_implement.dart';
 import 'package:news_apps/features/home/presentation/bloc/getNews/getnews_cubit.dart';
 import 'package:news_apps/features/home/presentation/view/widgets/news_list_veiw.dart';
@@ -13,8 +12,7 @@ class NewsListVeiwBuilder extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => GetnewsCubit(
-          RepoNewsImplement(newsservices: NewsServices(apiClass: ApiClass())))
+      create: (context) => GetnewsCubit(getIt<RepoNewsImplement>())
         ..getAllNews(catorgy: catogery),
       child: BlocBuilder<GetnewsCubit, GetnewsState>(
         builder: (context, state) {

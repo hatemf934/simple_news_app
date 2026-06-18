@@ -3,10 +3,12 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:news_apps/core/helper/on_generate.dart';
 import 'package:news_apps/core/cubits/theme_cubit/theme-cubit.dart';
 import 'package:news_apps/core/cubits/theme_cubit/theme_cubit_state.dart';
+import 'package:news_apps/core/helper/server_locator.dart';
 import 'package:news_apps/core/models/modetheme.dart';
 import 'package:news_apps/features/home/presentation/view/homepage.dart';
 
 void main() {
+  setUp();
   runApp(
     const NewsApp(),
   );

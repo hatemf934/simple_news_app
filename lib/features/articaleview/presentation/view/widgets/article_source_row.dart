@@ -19,7 +19,7 @@ class ArticleSourceRow extends StatelessWidget {
           width: WidthManager.w37,
           height: HeightManager.h37,
           decoration: BoxDecoration(
-            color: ColorManager.softRed.withOpacity(0.2),
+            color: ColorManager.softRed.withAlpha(51),
             shape: BoxShape.circle,
           ),
           alignment: Alignment.center,

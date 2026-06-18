@@ -21,10 +21,10 @@ class ArticleMetaRow extends StatelessWidget {
         Container(
           padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
           decoration: BoxDecoration(
-            color: ColorManager.softRed.withOpacity(0.15),
+            color: ColorManager.softRed.withAlpha(38),
             borderRadius: BorderRadius.circular(RadiusManager.r4),
             border: Border.all(
-              color: ColorManager.softRed.withOpacity(0.4),
+              color: ColorManager.softRed.withAlpha(102),
               width: 0.8,
             ),
           ),

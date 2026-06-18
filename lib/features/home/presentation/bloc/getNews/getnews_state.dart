@@ -14,8 +14,7 @@ final class GetnewsSucsses extends GetnewsState {
 final class GetnewsLoading extends GetnewsState {}
 
 final class GetnewsFailure extends GetnewsState {
-  final String error;
-  final IconData iconData;
+  final Failure failure;
 
-  GetnewsFailure({required this.error, required this.iconData});
+  GetnewsFailure({required this.failure});
 }

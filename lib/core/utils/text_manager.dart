@@ -17,6 +17,7 @@ class TextManager {
   static const String shareError = 'Something went wrong, please try again';
   static const String browserError = 'Could not open the browser';
   static const String byAuthor = ' By  ';
+  static const String tryAgain = "Try Again";
 
   static const String dot = '•';
 }

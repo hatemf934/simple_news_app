@@ -1,6 +1,7 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:meta/meta.dart';
+import 'package:news_apps/core/error/failure.dart';
 import 'package:news_apps/features/home/data/models/news_model.dart';
 import 'package:news_apps/features/home/data/repos/repo_news_implement.dart';
 
@@ -14,7 +15,7 @@ class GetnewsCubit extends Cubit<GetnewsState> {
     var result = await repoNewsImplement.getNews(catorgy: catorgy);
     result.fold(
       (failre) {
-        emit(GetnewsFailure(error: failre.message, iconData: failre.icon));
+        emit(GetnewsFailure(failure: failre));
       },
       (news) {
         emit(GetnewsSucsses(newsmodel: news));

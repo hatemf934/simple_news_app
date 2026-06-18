@@ -7,4 +7,5 @@ class FontManager {
   static const double font22 = 22;
   static const double font19 = 19;
   static const double font18 = 18;
+  static const double font64 = 64;
 }

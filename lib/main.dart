@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:news_hub/constant.dart';
+import 'package:news_hub/features/splash/presentation/view/custom_animated_splash_screen.dart';
 import 'package:news_hub/features/theme/presentation/bloc/theme_cubit/theme-cubit.dart';
 import 'package:news_hub/features/theme/presentation/bloc/theme_cubit/theme_cubit_state.dart';
 import 'package:news_hub/core/helper/on_generate.dart';
 import 'package:news_hub/core/helper/server_locator.dart';
 import 'package:news_hub/features/theme/data/model/theme_model.dart';
-import 'package:news_hub/features/home/presentation/view/homepage.dart';
 
 void main() async {
   setUp();
@@ -33,9 +33,8 @@ class NewsApp extends StatelessWidget {
                 ? ThemeModel().ligthMode
                 : ThemeModel().darkMode,
             debugShowCheckedModeBanner: false,
-            home: const Homepage(),
+            home: CustomAnimatedSplashScreen(themeCubitState: state),
             onGenerateRoute: onGenerateRoute,
-            initialRoute: Homepage.id,
           );
         },
       ),

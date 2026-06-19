@@ -20,6 +20,8 @@ class TextManager {
   static const String tryAgain = "Try Again";
   static const String searchForNews = "Search for news...";
   static const String noResults = "No matching results found";
+  static const String isDark = "isDark";
+  static const String themeBox = "themebox";
 
   static const String dot = '•';
 }

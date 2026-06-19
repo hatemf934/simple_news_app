@@ -1,14 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:news_hub/core/cubits/theme_cubit/theme-cubit.dart';
-import 'package:news_hub/core/cubits/theme_cubit/theme_cubit_state.dart';
+import 'package:hive_flutter/hive_flutter.dart';
+import 'package:news_hub/constant.dart';
+import 'package:news_hub/features/theme/presentation/bloc/theme_cubit/theme-cubit.dart';
+import 'package:news_hub/features/theme/presentation/bloc/theme_cubit/theme_cubit_state.dart';
 import 'package:news_hub/core/helper/on_generate.dart';
 import 'package:news_hub/core/helper/server_locator.dart';
-import 'package:news_hub/core/models/modetheme.dart';
+import 'package:news_hub/features/theme/data/model/theme_model.dart';
 import 'package:news_hub/features/home/presentation/view/homepage.dart';
 
-void main() {
+void main() async {
   setUp();
+  await Hive.initFlutter();
+  await Hive.openBox<bool>(themeBox);
   runApp(
     const NewsApp(),
   );

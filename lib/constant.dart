@@ -14,3 +14,4 @@ final List<CardModel> card = [
       image: AssetsManager.technology, nameImage: TextManager.technology),
   const CardModel(image: AssetsManager.general, nameImage: TextManager.general),
 ];
+const String themeBox = TextManager.themeBox;
